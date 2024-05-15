@@ -1,0 +1,7 @@
+type = last_world
+
+last_world {
+  is_server = false
+  world = C:/Users/terma/AppData/Roaming/com.modrinth.theseus/profiles/NetherCraft/saves/Testwelt
+}
+
