@@ -1,0 +1,14 @@
+blaze
+creeper
+enderman
+evoker
+piglin
+shulker
+slime
+witch
+zombified_piglin
+bee
+chicken
+cow
+iron golem
+zombie villager

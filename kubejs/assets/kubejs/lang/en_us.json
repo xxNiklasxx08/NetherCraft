@@ -56,5 +56,11 @@
     "advancement.netherite_tools.name": "FULL F*CKING TOOLS!!!",
     "advancement.netherite_tools.lore": "Build a Netherite Sword, Pickaxe, Axe & Shovel",
     "advancement.netherite_hoe.name": "You are rich!",
-    "advancement.netherite_hoe.lore": "Build a Netherite Hoe... (really unnecessary)"
+    "advancement.netherite_hoe.lore": "Build a Netherite Hoe... (really unnecessary)",
+    "advancement.goggles.name": "Glasses!",
+    "advancement.goggles.lore": "Build the Create Goggles!",
+    "advancement.goggle_helmet.name": "Glasses with a helmet! or the other way around?",
+    "advancement.goggle_helmet.lore": "Build a helmet with integrated Create Goggles!",
+    "advancement.wrench.name": "Configuration!",
+    "advancement.wrench.lore": "Build a wrench!"
 }

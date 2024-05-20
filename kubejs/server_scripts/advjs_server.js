@@ -34,6 +34,36 @@ AdvJSEvents.advancement((event) => {
         }).requireParentDone()
     })
 
+    let goggles = andesiteAlloy.addChild('goggles', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('create:goggles')
+            builder.setTitle({translate: 'advancement.goggles.name'})
+            builder.setDescription({translate: 'advancement.goggles.lore'})
+        }).criteria((builder) => {
+            builder.add('goggles', TRIGGER.hasItems('create:goggles'))
+        }).requireParentDone()
+    })
+
+    let goggleHelmet = goggles.addChild('goggle_helmet', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('creategoggles:goggle_netherite_helmet')
+            builder.setTitle({translate: 'advancement.goggle_helmet.name'})
+            builder.setDescription({translate: 'advancement.goggle_helmet.lore'})
+        }).criteria((builder) => {
+            builder.add('google_helmet', TRIGGER.hasItems(['creategoggles:goggle_chainmail_helmet', 'creategoggles:goggle_diamond_helmet', 'creategoggles:goggle_golden_helmet', 'creategoggles:goggle_iron_helmet', 'creategoggles:goggle_turtle_helmet', 'creategoggles:goggle_netherite_helmet', 'creategoggles:goggle_leather_helmet']))
+        }).requireParentDone()
+    })
+
+    let wrench = goggles.addChild('wrench', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('create:wrench')
+            builder.setTitle({translate: 'advancement.wrench.name'})
+            builder.setDescription({translate: 'advancement.wrench.lore'})
+        }).criteria((builder) => {
+            builder.add('wrench', TRIGGER.hasItems('create:wrench'))
+        }).requireParentDone()
+    })
+
     let fryer = andesiteAlloy.addChild('mechanical_fryer', (advancement) => {
         advancement.display((builder) => {
             builder.setIcon('create_bic_bit:mechanical_fryer')
@@ -97,32 +127,32 @@ AdvJSEvents.advancement((event) => {
 
     let drawer = root.addChild('drawer', (advancement) => {
         advancement.display((builder) => {
-            builder.setIcon('storagedrawers:oak_full_drawers_1'),
+            builder.setIcon('functionalstorage:oak_1'),
             builder.setTitle({translate: 'advancement.drawer.name'})
             builder.setDescription({translate: 'advancement.drawer.lore'})
         }).criteria((builder) => {
-            builder.add('drawer', TRIGGER.hasItems('#storagedrawers:drawers'))
+            builder.add('drawer', TRIGGER.hasItems('#functionalstorage:drawer'))
         }).requireParentDone()
     })
 
     let drawerController = drawer.addChild('drawer_controller', (advancement) => {
         advancement.display((builder) => {
-            builder.setIcon('storagedrawers:controller')
+            builder.setIcon('functionalstorage:storage_controller')
             builder.setTitle({translate: 'advancement.drawerController.name'})
             builder.setDescription({translate: 'advancement.drawerController.lore'})
             builder.setFrameType('challenge')
         }).criteria((builder) => {
-            builder.add('drawerController', TRIGGER.hasItems('storagedrawers:controller'))
+            builder.add('drawerController', TRIGGER.hasItems('functionalstorage:storage_controller'))
         }).requireParentDone()
     })
 
     let drawerCompacting = drawer.addChild('drawer_compacting', (advancement) => {
         advancement.display((builder) => {
-            builder.setIcon('storagedrawers:compacting_drawers_3')
+            builder.setIcon('functionalstorage:compacting_drawer')
             builder.setTitle({translate: 'advancement.drawerCompacting.name'})
             builder.setDescription({translate: 'advancement.drawerCompacting.lore'})
         }).criteria((builder) => {
-            builder.add('drawerCompacting', TRIGGER.hasItems('storagedrawers:compacting_drawers_3'))
+            builder.add('drawerCompacting', TRIGGER.hasItems('functionalstorage:compacting_drawer'))
         }).requireParentDone()
     })
 

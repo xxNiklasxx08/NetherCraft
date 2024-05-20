@@ -10,4 +10,8 @@ ServerEvents.recipes((event) => {
 
     event.recipes.createMixing(Fluid.of('create_bic_bit:curdled_milk', 1000), [Fluid.of('minecraft:milk', 1000)]).heated()
 
+    event.recipes.createMixing('2x minecraft:dragon_egg', ['minecraft:dragon_egg', '8x minecraft:obsidian']).superheated()
+
+    event.recipes.createMixing('vegandelight:salt', [Fluid.water(250)]).heated()
+
 })
