@@ -11,4 +11,14 @@ StartupEvents.registry('item', (event) => {
         })
     }).useAnimation('eat')
 
+    event.create('nether_sword', 'sword').tier('nether')
+    event.create('nether_pickaxe', 'pickaxe').tier('nether')
+    event.create('nether_axe', 'axe').tier('nether')
+    event.create('nether_shovel', 'shovel').tier('nether')
+    event.create('nether_hoe', 'hoe').tier('nether')
+    event.create('nether_helmet', 'helmet').tier('nether')
+    event.create('nether_chestplate', 'chestplate').tier('nether')
+    event.create('nether_leggings', 'leggings').tier('nether')
+    event.create('nether_boots', 'boots').tier('nether')
+
 })

@@ -1,7 +1,7 @@
 //priority: 0
 
 AdvJSEvents.advancement((event) => {
-    let { CONDITION, PREDICATE, PROVIDER, TRIGGER } = event
+    let { TRIGGER } = event
     event.remove({ mod: 'minecraft' })
     event.remove({ mod: 'create' })
     event.remove({ mod: 'create_bic_bit' })
@@ -10,6 +10,7 @@ AdvJSEvents.advancement((event) => {
     event.remove({ mod: 'tetra' })
     event.remove({ mod: 'ironfurnaces' })
     event.remove({ mod: 'alexsmobs' })
+    //event.remove({ mod: 'stellarity' })
 
     let root = event.create('nethercraft:root').display((builder) => {
         builder.setIcon('naturescompass:naturescompass')
@@ -328,6 +329,5 @@ AdvJSEvents.advancement((event) => {
             builder.add('hoe', TRIGGER.hasItems('minecraft:netherite_hoe'))
         }).requireParentDone()
     })
-
 
 })

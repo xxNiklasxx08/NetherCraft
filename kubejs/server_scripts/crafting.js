@@ -54,12 +54,7 @@ ServerEvents.recipes((event) => {
         }
     )
 
-
-
-
-
-
-
+    // Drawer
 
     event.shaped('functionalstorage:oak_1',
         ['XXX', 'XYX', 'XXX'], {
