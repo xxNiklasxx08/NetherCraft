@@ -54,6 +54,14 @@ ServerEvents.recipes((event) => {
         }
     )
 
+    event.shaped('travelersbackpack:snow',
+        ['XXX', 'YZY', 'AYA'], {
+            X: 'minecraft:ice',
+            Y: 'minecraft:snow_block',
+            A: 'minecraft:powder_snow_bucket'
+        }
+    )
+
     // Drawer
 
     event.shaped('functionalstorage:oak_1',

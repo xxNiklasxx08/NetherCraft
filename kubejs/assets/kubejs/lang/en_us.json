@@ -71,5 +71,7 @@
     "advancement.goggle_helmet.name": "Glasses with a helmet! or the other way around?",
     "advancement.goggle_helmet.lore": "Build a helmet with integrated Create Goggles!",
     "advancement.wrench.name": "Configuration!",
-    "advancement.wrench.lore": "Build a wrench!"
+    "advancement.wrench.lore": "Build a wrench!",
+    "advancement.throwable_tnt.name": "More Explosions!",
+    "advancement.throwable_tnt.lore": "Craft a Throwable TNT"
 }

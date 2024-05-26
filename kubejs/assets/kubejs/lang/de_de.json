@@ -71,5 +71,7 @@
     "advancement.goggle_helmet.name": "Eine Brille mit Helm! oder andersrum?",
     "advancement.goggle_helmet.lore": "Baue einen Helm mit integrierter Create-Brille!",
     "advancement.wrench.name": "Konfiguration!",
-    "advancement.wrench.lore": "Baue eine Wrench!"
+    "advancement.wrench.lore": "Baue eine Wrench!",
+    "advancement.throwable_tnt.name": "Werfbare Explosionen!",
+    "advancement.throwable_tnt.lore": "Crafte ein Werfbares TNT"
 }

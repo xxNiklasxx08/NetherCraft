@@ -121,7 +121,9 @@ let remove = [
     'travelersbackpack:gold_tier_upgrade',
     'travelersbackpack:diamond_tier_upgrade',
     'travelersbackpack:netherite_tier_upgrade',
-    'travelersbackpack:crafting_upgrade'
+    'travelersbackpack:crafting_upgrade',
+    'travelersbackpack:snow',
+    'minecraft:snow_block'
 ]
 
 let id = [

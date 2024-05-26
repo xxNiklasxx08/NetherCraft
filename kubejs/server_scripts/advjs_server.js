@@ -291,6 +291,16 @@ AdvJSEvents.advancement((event) => {
         }).requireParentDone()
     })
 
+    let throwableTNT = ancientDebris.addChild('throwable_tnt', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:snowball')
+            builder.setTitle({translate: 'advancement.throwable_tnt.name'})
+            builder.setDescription({translate: 'advancement.throwable_tnt.lore'})
+        }).criteria((builder) => {
+            builder.add('throwable_tnt', TRIGGER.hasItems('minecraft:snowball'))
+        }).requireParentDone()
+    })
+
     let netheriteArmor = ancientDebris.addChild('netherite_armor', (advancement) => {
         advancement.display((builder) => {
             builder.setIcon('minecraft:netherite_chestplate'),

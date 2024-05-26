@@ -6,6 +6,13 @@ LevelEvents.loaded((event) => {
     event.server.runCommandSilent('gamerule lavaSourceConversion true')
 })
 
+LevelEvents.tick((event) => {
+    event.server.runCommandSilent('clear @a gravestone:obituary')
+    event.server.runCommandSilent('kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:snowball"}}]')
+    event.server.runCommandSilent('execute as @e[type=minecraft:snowball] at @s unless block ~ ~ ~ minecraft:air run summon minecraft:tnt ~ ~ ~ {block_state:{Name:"minecraft:air"},fuse:1}')
+    event.server.runCommandSilent('execute as @e[type=minecraft:snowball] at @s unless block ~ ~-1 ~ minecraft:air run summon minecraft:tnt ~ ~ ~ {block_state:{Name:"minecraft:air"},fuse:1}')
+})
+
 ServerEvents.tags('item', (event) => {
     event.add('creategoggles:goggle', 'kubejs:nether_helmet')
 })

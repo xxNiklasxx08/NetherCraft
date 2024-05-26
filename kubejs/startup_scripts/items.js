@@ -22,3 +22,11 @@ StartupEvents.registry('item', (event) => {
     event.create('nether_boots', 'boots').tier('nether')
 
 })
+
+ItemEvents.modification((event) => {
+    
+    event.modify('minecraft:snowball', (item) => {
+        item.maxStackSize = 64
+    })
+
+})
