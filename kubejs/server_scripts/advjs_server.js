@@ -291,6 +291,157 @@ AdvJSEvents.advancement((event) => {
         }).requireParentDone()
     })
 
+    let dragonEgg = ancientDebris.addChild('dragon_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:dragon_egg')
+            builder.setTitle({translate: 'advancement.dragon_egg.name'})
+            builder.setDescription({translate: 'advancement.dragon_egg.lore'})
+            builder.setFrameType('challenge')
+        }).criteria((builder) => {
+            builder.add('dragon_egg', TRIGGER.hasItems('minecraft:dragon_egg'))
+        }).requireParentDone()
+    })
+
+    let beeSpawnEgg = dragonEgg.addChild('bee_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:bee_spawn_egg')
+            builder.setTitle({translate: 'advancement.bee_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.bee_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:bee_spawn_egg'))
+        }).requireParentDone()
+    })
+
+    let blazeSpawnEgg = beeSpawnEgg.addChild('blaze_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:blaze_spawn_egg')
+            builder.setTitle({translate: 'advancement.blaze_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.blaze_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:blaze_spawn_egg'))
+        })
+    })
+
+    let chickenSpawnEgg = blazeSpawnEgg.addChild('chicken_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:chicken_spawn_egg')
+            builder.setTitle({translate: 'advancement.chicken_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.chicken_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:chicken_spawn_egg'))
+        })
+    })
+
+    let cowSpawnEgg = chickenSpawnEgg.addChild('cow_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:cow_spawn_egg')
+            builder.setTitle({translate: 'advancement.cow_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.cow_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:cow_spawn_egg'))
+        })
+    })
+
+    let creeperSpawnEgg = cowSpawnEgg.addChild('creeper_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:creeper_spawn_egg')
+            builder.setTitle({translate: 'advancement.creeper_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.creeper_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:creeper_spawn_egg'))
+        })
+    })
+
+    let endermanSpawnEgg = creeperSpawnEgg.addChild('enderman_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:enderman_spawn_egg')
+            builder.setTitle({translate: 'advancement.enderman_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.enderman_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:enderman_spawn_egg'))
+        })
+    })
+
+    let evokerSpawnEgg = endermanSpawnEgg.addChild('evoker_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:evoker_spawn_egg')
+            builder.setTitle({translate: 'advancement.evoker_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.evoker_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:evoker_spawn_egg'))
+        })
+    })
+
+    let ironGolemSpawnEgg = evokerSpawnEgg.addChild('iron_golem_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:iron_golem_spawn_egg')
+            builder.setTitle({translate: 'advancement.iron_golem_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.iron_golem_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:iron_golem_spawn_egg'))
+        })
+    })
+
+    let piglinSpawnEgg = ironGolemSpawnEgg.addChild('piglin_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:piglin_spawn_egg')
+            builder.setTitle({translate: 'advancement.piglin_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.piglin_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:piglin_spawn_egg'))
+        })
+    })
+
+    let shulkerSpawnEgg = piglinSpawnEgg.addChild('shulker_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:shulker_spawn_egg')
+            builder.setTitle({translate: 'advancement.shulker_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.shulker_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:shulker_spawn_egg'))
+        })
+    })
+
+    let slimeSpawnEgg = shulkerSpawnEgg.addChild('slime_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:slime_spawn_egg')
+            builder.setTitle({translate: 'advancement.slime_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.slime_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:slime_spawn_egg'))
+        })
+    })
+
+    let witchSpawnEgg = slimeSpawnEgg.addChild('witch_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:witch_spawn_egg')
+            builder.setTitle({translate: 'advancement.witch_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.witch_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:witch_spawn_egg'))
+        })
+    })
+
+    let zombieVillagerSpawnEgg = witchSpawnEgg.addChild('zombie_villager_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:zombie_villager_spawn_egg')
+            builder.setTitle({translate: 'advancement.zombie_villager_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.zombie_villager_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:zombie_villager_spawn_egg'))
+        })
+    })
+
+    let zombifiedPiglinSpawnEgg = zombieVillagerSpawnEgg.addChild('zombified_piglin_spawn_egg', (advancement) => {
+        advancement.display((builder) => {
+            builder.setIcon('minecraft:zombified_piglin_spawn_egg')
+            builder.setTitle({translate: 'advancement.zombified_piglin_spawn_egg.name'})
+            builder.setDescription({translate: 'advancement.zombified_piglin_spawn_egg.lore'})
+        }).criteria((builder) => {
+            builder.add('spawn_egg', TRIGGER.hasItems('minecraft:zombified_piglin_spawn_egg'))
+        })
+    })
+
     let throwableTNT = ancientDebris.addChild('throwable_tnt', (advancement) => {
         advancement.display((builder) => {
             builder.setIcon('minecraft:snowball')
