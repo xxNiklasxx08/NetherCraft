@@ -124,7 +124,8 @@ let remove = [
     'travelersbackpack:crafting_upgrade',
     'travelersbackpack:snow',
     'minecraft:snow_block',
-    'minecraft:infested_deepslate'
+    'minecraft:infested_deepslate',
+    'tetra:holo'
 ]
 
 let id = [

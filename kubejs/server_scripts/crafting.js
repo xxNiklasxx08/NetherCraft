@@ -62,6 +62,22 @@ ServerEvents.recipes((event) => {
         }
     )
 
+    event.shaped(Item.of('tetra:holo', {
+        'holo/repo': 'holo/repo',
+        'holo/repo_material': 'repo/default',
+        'holo/frame': 'holo/frame',
+        'holo/scanner': 'holo/scanner',
+        'holo/scanner_material': 'scanner/default',
+        'holo/core_material': 'core/dim',
+        'holo/core': 'holo/core',
+        'holo/frame_material': 'frame/ancient'
+    }),
+        [' X ', 'XYX', ' X '], {
+            X: 'minecraft:redstone',
+            Y: 'minecraft:redstone_lamp'
+        }
+    )
+
     // Drawer
 
     event.shaped('functionalstorage:oak_1',
