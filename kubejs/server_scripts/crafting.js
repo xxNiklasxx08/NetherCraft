@@ -62,6 +62,16 @@ ServerEvents.recipes((event) => {
         }
     )
 
+    event.shaped('travelersbackpack:standard',
+        ['XYX', 'ZAZ', 'XBX'], {
+            X: '#forge:leather',
+            Y: 'minecraft:gold_ingot',
+            Z: 'travelersbackpack:backpack_tank',
+            A: '#forge:chests/wooden',
+            B: '#minecraft:beds'
+        }
+    )
+
     event.shaped(Item.of('tetra:holo', {
         'holo/repo': 'holo/repo',
         'holo/repo_material': 'repo/default',

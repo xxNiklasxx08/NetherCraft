@@ -122,7 +122,8 @@ let remove = [
     'travelersbackpack:diamond_tier_upgrade',
     'travelersbackpack:netherite_tier_upgrade',
     'travelersbackpack:crafting_upgrade',
-    'travelersbackpack:snow',
+    'travelersbackpack:snow',,
+    'travelersbackpack:standard',
     'minecraft:snow_block',
     'minecraft:infested_deepslate',
     'tetra:holo'

@@ -38,6 +38,6 @@ ServerEvents.recipes((event) => {
     event.recipes.createDeploying('travelersbackpack:gold_tier_upgrade', ['travelersbackpack:iron_tier_upgrade', 'minecraft:gold_block'])
     event.recipes.createDeploying('travelersbackpack:diamond_tier_upgrade', ['travelersbackpack:gold_tier_upgrade', 'minecraft:diamond_block'])
     event.recipes.createDeploying('travelersbackpack:netherite_tier_upgrade', ['travelersbackpack:diamond_tier_upgrade', 'minecraft:netherite_block'])
-    event.recipes.createDeploying('travelersbackpack:crafting_upgrade', ['travelersbackpack:blank_upgrade', 'tetra:basic_workbench'])
+    event.recipes.createDeploying('travelersbackpack:crafting_upgrade', ['travelersbackpack:blank_upgrade', 'minecraft:crafting_table'])
 
 })
