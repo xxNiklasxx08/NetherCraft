@@ -8,6 +8,8 @@ LevelEvents.loaded((event) => {
 
 LevelEvents.tick((event) => {
     event.server.runCommandSilent('clear @a gravestone:obituary')
+    event.server.runCommandSilent('clear @a minecraft:knowledge_book')
+    event.server.runCommandSilent('kill @e[type=alexsmobs:crimson_mosquito]')
     event.server.runCommandSilent('execute as @e[type=minecraft:minecart] if data entity @s {Passengers:[{Contraption:{Blocks:{Palette:[{Name:"minecraft:spawner"}]}}}]} run kill @s')
     event.server.runCommandSilent('kill @e[type=minecraft:item,nbt={Item:{id:"minecraft:snowball"}}]')
     event.server.runCommandSilent('execute as @e[type=minecraft:snowball] at @s unless block ~ ~ ~ minecraft:air run summon minecraft:tnt ~ ~ ~ {block_state:{Name:"minecraft:air"},fuse:1}')

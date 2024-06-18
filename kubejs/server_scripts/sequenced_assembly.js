@@ -38,6 +38,16 @@ ServerEvents.recipes((event) => {
         event.recipes.createDeploying(kelp, [kelp, 'farmersdelight:fried_rice'])
     ]).transitionalItem(kelp).loops(1)
 
+    let bowl = 'minecraft:bowl'
+    event.recipes.createSequencedAssembly('farmersdelight:roasted_mutton_chops', bowl, [
+        event.recipes.createDeploying(bowl, [bowl, 'minecraft:beetroot']),
+        event.recipes.createDeploying(bowl, [bowl, 'farmersdelight:tomato']),
+        event.recipes.createDeploying(bowl, [bowl, 'farmersdelight:cooked_rice']),
+        event.recipes.createDeploying(bowl, [bowl, ['farmersdelight:cooked_mutton_chops', 'vegandelight:cooked_tofu_slice']]),
+        event.recipes.createFilling(bowl, [bowl, Fluid.of('create_bic_bit:frying_oil', 500)]),
+        event.recipes.createPressing(bowl, bowl)
+    ]).transitionalItem(bowl).loops(1)
+
     event.recipes.createSequencedAssembly('create:steam_engine', copper, [
         event.recipes.createDeploying(copper, [copper, 'create:golden_sheet']),
         event.recipes.createDeploying(copper, [copper, 'create:shaft']),

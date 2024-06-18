@@ -12,4 +12,6 @@ ServerEvents.recipes((event) => {
         'create:polished_rose_quartz'
     ])
 
+    event.recipes.createCompacting('minecraft:diamond', 'minecraft:coal_block').heated()
+
 })

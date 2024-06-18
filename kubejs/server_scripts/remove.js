@@ -66,6 +66,7 @@ let remove = [
     'farmersdelight:kelp_roll',
     'farmersdelight:fried_rice',
     'farmersdelight:milk_bottle',
+    'farmersdelight:roasted_mutton_chops',
     'vegandelight:salt',
     'create_bic_bit:raw_fries',
     'create_bic_bit:fries',
